@@ -12,7 +12,7 @@ table = ddb.Table(table_name)# 'bedrock_runtime' is the client to consume the Be
 bedrock_runtime = boto3.client('bedrock-runtime')
 ssm = boto3.client('ssm')
 
-# Create an S3 client to interact with S3
+# Create an S3 client to interact with S3   
 s3 = boto3.client('s3')
 
 def lambda_handler(event, context):
